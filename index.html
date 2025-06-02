@@ -1,67 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BASTHA GmbH</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
     }
     header {
-      background-color: #003366;
+      background: #222;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #e10600;
+      margin: 0;
+      font-size: 26px;
+    }
+    nav a {
       color: white;
-      padding: 30px 20px;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1542353436-312f0e1f67ff?q=80&w=2742&auto=format&fit=crop') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .hero h2 {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
     }
-    h1, h2 {
-      color: #003366;
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+      background: #1a1a1a;
+    }
+    .section {
+      flex: 1 1 300px;
+      background: #222;
+      padding: 20px;
+      border: 1px solid #e10600;
+      border-radius: 10px;
+    }
+    .section h3 {
+      color: #e10600;
     }
     .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
+      background: #111;
+      padding: 40px 20px;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+    }
+    .contact p {
+      margin: 10px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>BASTHA GmbH</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Industries</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <div class="hero">
+    <h2>Experts in Materials & Supplies</h2>
+  </div>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <div class="sections">
+    <div class="section">
+      <h3>Building Supplies</h3>
+      <p>High-quality building materials for wholesalers and dealers.</p>
     </div>
-  </section>
+    <div class="section">
+      <h3>Machinery & Equipment</h3>
+      <p>Wide range of industrial machines and equipment.</p>
+    </div>
+    <div class="section">
+      <h3>Packaging</h3>
+      <p>Durable and eco-friendly packaging materials.</p>
+    </div>
+    <div class="section">
+      <h3>Distribution</h3>
+      <p>Efficient logistics and supply chain management.</p>
+    </div>
+  </div>
 
-  <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
-  </footer>
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:mail@basthagmbh.shop" style="color:#e10600;">mail@basthagmbh.shop</a></p>
+    <p>Phone: <a href="tel:+49157282971" style="color:#e10600;">+49 157 282971</a></p>
+    <p>City: Hamburg, Germany</p>
+    <iframe 
+      src="https://maps.google.com/maps?q=Hamburg,%20Germany&z=12&output=embed">
+    </iframe>
+  </div>
 </body>
 </html>
